@@ -1,0 +1,9 @@
+*::before {
+ visibility: hidden !important;
+}
+blockquote {
+ display:none
+}
+summary {
+ display:none
+}

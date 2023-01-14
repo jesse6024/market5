@@ -1,0 +1,152 @@
+.login-head-container{
+    border: solid 1px black;
+    width: 60%;
+    height: 20%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.header-title{
+    margin-top: 60px;
+    position: absolute;
+    margin-left: 23%;
+    color: white;
+}
+
+body{
+   
+    overflow-x:hidden;
+    
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.login-form-container{
+    border: solid 1px black;
+    width: 59.4%;
+    height: 60%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.login-form-container2{
+    border: solid 1px black;
+    height: 45%;
+    width: 40%;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+
+.register-form-container{
+    border: solid 1px black;
+    width: 59.4%;
+    height: 60%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.register-form-container2{
+    border: solid 1px black; 
+    height: 45%;
+    width:40%;
+    position:absolute;
+    margin-top:15%;
+    margin-left:10%;
+
+}
+
+.form {
+    width: 300px;
+    margin: 0 auto;
+    border: solid 1px black;
+    text-align: center;
+    margin-top: 15%;
+    overflow: hidden;
+}
+.clearfix:before, .clearfix:after{
+content: "";
+display: table;
+}
+.clearfix:after{
+clear: both;
+}
+a{
+color:#0067ab;
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+}
+
+input[type='text'], input[type='confirmPassword'],
+input[type='password'] {
+width: 200px;
+border-radius: 2px;
+border: 1px solid #CCC;
+padding: 10px;
+color: #333;
+font-size: 14px;
+margin-top: 10px;
+text-align:center;
+}
+input[type='submit']{
+padding: 10px 25px 8px;
+color: #fff;
+background-color: #0067ab;
+text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+font-size: 16px;
+box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
+border: 1px solid #0164a5;
+border-radius: 2px;
+margin-top: 10px;
+cursor:pointer;
+}
+input[type='submit']:hover {
+background-color: #024978;
+}
+
+#register_form {
+    /*width: 37%;*/
+    /*margin: 100px auto;*/
+    padding-bottom: 30px;
+    border: 1px solid #918274;
+    border-radius: 5px;
+    background: white;
+  }
+  #register_form input {
+    width: 80%;
+    height: 35px;
+    margin: 5px 10%;
+    font-size: 1.1em;
+    padding: 4px;
+    font-size: .9em;
+  }
+  .form_error span {
+    width: 80%;
+    height: 35px;
+    margin: 3px 10%;
+    font-size: 1.1em;
+    color: #D83D5A;
+  }
+  .form_error input {
+    border: 1px solid #D83D5A;
+  }
+  #reg_btn {
+    height: 45px;
+    /* width: 80%; */
+    margin: 5px 10%;
+    color: white;
+    background: #3B5998;
+    border: none;
+    border-radius: 5px;
+  }

@@ -1,0 +1,76 @@
+.goLevel{
+  background-color: #dc381d;
+  padding: 1px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.admin-color{background-color: #0d0187; text-decoration: underline overline;}
+.mod-sen-color{background-color: #ca1eaf; color: white; text-decoration: underline overline;}
+.mod-jun-color{background-color: #f5e970; color: black; text-decoration: underline overline;}
+.vendor-color{background-color: #3cb83c;}
+.sc-color{background-color: #73ecb8; color: black;}
+.limited-color{background-color: #929290;}
+.banned-color{background-color: black; text-decoration: line-through;}
+
+.level-exclusive{background-color: #d42dba;}
+
+.level-10{background-color: #757514;}
+.level-9{background-color: #ad8012;}
+.level-8{background-color: #d4c02d;}
+.level-7{background-color: #6e6ef2;}
+.level-6{background-color: #9f9fe3;}
+.level-5{background-color: #985757;}
+.level-4{background-color: #c56161;}
+.level-3{background-color: #428bcb;}
+.level-2{background-color: #5ac0de;}
+.level-1{background-color: #5ab95a;}
+
+.btnbuy {
+
+	margin-left: 3px;
+    background-color: darkred;
+    border: 1px solid darkred;
+    background-repeat: no-repeat;
+    background-position: left 2px center;
+    background-size: 20px;
+    padding-left: 25px;
+
+
+}
+
+.btnbuy:hover{
+
+	background-color: red;
+	cursor: pointer;
+
+}
+
+.replyBtn {
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #dc381d;
+    border-radius: 5px;
+    background-color: #dc381d;
+    color: white;
+    padding: 5px 8px;
+
+}
+
+.replyBtn:hover {
+	cursor:pointer;
+
+}
+
+.roundedlisting {
+    border-radius: .50rem !important;
+}
+
+.left-icon53 {
+
+  float: inline-start;
+  margin-right: 14px;
+  margin-left: 3px;
+
+}  
