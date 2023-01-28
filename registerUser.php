@@ -4,7 +4,7 @@ session_start();
 include("DBConnection.php");
 include("links.php");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = new mysqli("localhost", "root", "", "chatbox");
+$mysqli = new mysqli("localhost", "root", "", "market");
 
 
 /*$connect = mysqli_connect("localhost", "root", "", "chatbox");*/

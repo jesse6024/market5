@@ -8,6 +8,8 @@ include("link.php");
 <html>
     <head>
         <title>chat</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="password-strength-indicator.css">
     </head>
     <body>
         <div class="modal-dialog">
@@ -16,15 +18,19 @@ include("link.php");
            <h4>Please Select Your Account</h4>
         </div>
         <div class="modal-dialog">
+          <ol>
          <?
           
-          $users=mysqli_query($connect,"SELECT * FROM users")
+          $user=mysqli_query($connect, "SELECT * FROM users")
           or die("Failed to query database" mysqli_error());
-          while($user = mysqli_fetch_assoc($users));
+          while($user = mysqli_fetch_assoc($users))
           {
-            echo '<li><a href="chat-page.php?userId=' .$user["Id"].'"'.$user["User"].'</a></li>';}?>
+            echo '<li><a href="chat-page.php?userId=' .$user["Id"].'">'.$user["User"].'</a></li>';
+            
+          }
+            ?>
          </ol>
-         <a href="registerUser.php" styles="float:right;">Register here.</a>
+         <a href="registerUser.php" style="float:right;">Register here.</a>
          </div>
         </div>
         </div>

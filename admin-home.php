@@ -34,8 +34,8 @@ session_start();
           <a class="navbar-brand" href="homepage.php">REUP MARKET</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="admin-home">Admin</a></li>
+          <li class="active"><a href="admin-home.php">Home</a></li>
+          <li class=""><a href="admin-page.php">Admin</a></li>
           <li><a href="logout.php">Log Out</a></li>
         </ul>
         <div style="">
@@ -223,7 +223,7 @@ session_start();
   <li></li>
   <li><b>➤<a href="listing_category?id=151" class="nav-link"> Digital Items <span class="badge badge-secondary float-right">1817</span></a></b></li>
   <li></li>
-  <li><b>➤<a href="listing_category?id=158" class="nav-link"> Websites &amp; Graphic Design <span class="badge badge-secondary float-right">19</span></a></b></li>
+  <li style="margin-left:-1.5px"><b>➤<a href="listing_category?id=158" class="nav-link"> Websites &amp; Graphic Design <span class="badge badge-secondary float-right">19</span></a></b></li>
   <li></li>
   <li><b>➤<a href="listing_category?id=165" class="nav-link"> Jewels &amp; Precious Metals <span class="badge badge-secondary float-right">25</span></a></b></li><li>
 </li>

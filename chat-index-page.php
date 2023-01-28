@@ -2,7 +2,12 @@
 session_start();
 include("DBConnection.php");
 include("links.php");
-$connect = mysqli_connect("localhost", "root", "", "chatbox");
+$connect = mysqli_connect("localhost", "root", "", "market");
+if(isset($_GET["userId"]))
+{
+    $_SESSION["userId"] = $_GET["userId"];
+    header("location: chatbox2.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -32,12 +37,12 @@ $connect = mysqli_connect("localhost", "root", "", "chatbox");
                 <h4>Please Select Your Account</h4>
                </div>
                <div class="modal-body">
-                <ol></ol>
+                <ol>
                 <?php
-                $users = mysqli_query($connect, "SELECT * FROM users") or die ("Failed to query database".mysqli_error());
+                $users = mysqli_query($connect, "SELECT * FROM users") or die ("Failed to query database".mysqli_error($mysql));
                 while($user = mysqli_fetch_assoc($users))
                 {
-                    echo '<li style="list-style:none;"><a href="index.php?userId='.$user["Id"].'">'.$user["User"].'</a></li> ';
+                    echo '<li style="list-style:none;"><a href="chat-index-page.php?userId='.$user["Id"].'">'.$user["User"].'</a></li> ';
                 }
                 
                 ?>

@@ -1,5 +1,5 @@
 <?
 
-$connect = mysqli_connect("localhost", "root", "", "chatbox");
+$connect = mysqli_connect("localhost", "root", "", "market");
 
 ?>

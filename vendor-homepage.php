@@ -34,8 +34,8 @@ session_start();
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="landing_page.php">Secured Page</a></li>
           <li><a href="vendor.php">Vendor</a></li>
+          <li><a href="chat-index-page.php">Chat</a></li>
           <li><a href="logout.php">Log Out</a></li>
         </ul>
         <div style="">

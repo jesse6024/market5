@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login</title>
-<link rel="stylesheet" href="style2.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <?php
@@ -60,20 +59,26 @@ height: 100%;
 "
 >
 <div class="login-head-container" style="
-
+    /*border: solid 1px black;*/
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 400px;
 ">
 
 <div class="header-title" style="
     text-align: center;
     "
-><h1>REUP MARKET</h1></div></div>
+><h1 style="color:black;">REUP MARKET</h1></div></div>
 <div class="form" style= " 
 width: 300px;
     margin: 0 auto;
     border: solid 1px black;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 0%;
     overflow: hidden;
+
 ">
 <h1>Log In</h1>
 <form action="" method="post" name="login">

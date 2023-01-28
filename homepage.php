@@ -8,7 +8,7 @@ session_start();
 
 <head>
   <meta charset="utf-8">
-  <title>Vendor Homepage</title>
+  <title>Homepage</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="password-strength-indicator.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -223,7 +223,7 @@ session_start();
   <li></li>
   <li><b>➤<a href="listing_category?id=151" class="nav-link"> Digital Items <span class="badge badge-secondary float-right">1817</span></a></b></li>
   <li></li>
-  <li><b>➤<a href="listing_category?id=158" class="nav-link"> Websites &amp; Graphic Design <span class="badge badge-secondary float-right">19</span></a></b></li>
+  <li style="margin-left:-1.5px;"><b>➤<a href="listing_category?id=158" class="nav-link"> Websites &amp; Graphic Design <span class="badge badge-secondary float-right">19</span></a></b></li>
   <li></li>
   <li><b>➤<a href="listing_category?id=165" class="nav-link"> Jewels &amp; Precious Metals <span class="badge badge-secondary float-right">25</span></a></b></li><li>
 </li>
