@@ -8,13 +8,16 @@ if(!isset($_SESSION['username'])){
     header("Location: index.php");
     exit();
 }
-$toUser = isset($_GET['toUser']) ? mysqli_real_escape_string($connect, $_GET['toUser']) : die('toUser is not set');
 
-if (!isset($_GET['toUser'])) {
+echo $_SESSION['toUser'];
+
+$toUser = isset($_SESSION['toUser']) ? mysqli_real_escape_string($connect, $_SESSION['toUser']) : die('toUser is not set');
+
+if (!isset($_SESSION['toUser'])) {
     header("Location: chat-index-page.php");
     exit();
 }
-$toUser = mysqli_real_escape_string($connect, $_GET['toUser']);
+$toUser = mysqli_real_escape_string($connect, $_SESSION['toUser']);
 
 $users = mysqli_query($connect, "SELECT * FROM users WHERE Id = '" . $_SESSION["userId"] . "'")
     or die("Failed to query database" . mysqli_error($connect));
@@ -41,7 +44,7 @@ while ($user = mysqli_fetch_assoc($users)) {
                     $msgs = mysqli_query($connect, "SELECT * FROM users")
                         or die("Failed to query database" . mysqli_error($connect));
                     while ($msg = mysqli_fetch_assoc($msgs)) {
-                        echo '<li><a href="chat.php?toUser=' . $msg["Id"] . '">' . $msg["User"] . '</a></li>';
+                        echo '<li><a href="chatbox.php?toUser=' . $msg["Id"] . '">' . $msg["User"] . '</a></li>';
                     }
                     ?>
                 </ul>
@@ -73,7 +76,7 @@ while ($user = mysqli_fetch_assoc($users)) {
 <p>
 <?php
                              //query the database to get all messages between the current user and the selected user
-                              $messages = mysqli_query($connect, "SELECT * FROM messages WHERE (fromUser = '" . $_SESSION["Id"] . "' AND toUser = '" . $_GET["toUser"] . "') OR (fromUser = '" . $_GET["toUser"] . "' AND toUser = '" . $_SESSION["Id"] . "')")
+                              $messages = mysqli_query($connect, "SELECT * FROM messages WHERE (fromUser = '" . $_SESSION["Id"] . "' AND toUser = '" . $_SESSION["toUser"] . "') OR (fromUser = '" . $_SESSION["toUser"] . "' AND toUser = '" . $_SESSION["Id"] . "')")
                               or die("Failed to query database" . mysqli_error($connect));
                               //display all messages
                              while ($message = mysqli_fetch_assoc($messages)) {

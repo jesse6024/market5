@@ -6,6 +6,7 @@ $connect = mysqli_connect("localhost", "root", "", "market");
 if(isset($_GET["userId"]))
 {
     $_SESSION["userId"] = $_GET["userId"];
+    $_SESSION["toUser"] = $_GET["toUser"];
     header("location: chatbox2.php");
 }
 ?>
@@ -42,7 +43,7 @@ if(isset($_GET["userId"]))
                 $users = mysqli_query($connect, "SELECT * FROM users") or die ("Failed to query database".mysqli_error($mysql));
                 while($user = mysqli_fetch_assoc($users))
                 {
-                    echo '<li style="list-style:none;"><a href="chat-index-page.php?userId='.$user["Id"].'">'.$user["User"].'</a></li> ';
+                    echo '<li style="list-style:none;"><a href="chat-index-page.php?userId='.$user["Id"].'&toUser='.$user["User"].'">'.$user["User"].'</a></li> ';
                 }
                 
                 ?>
